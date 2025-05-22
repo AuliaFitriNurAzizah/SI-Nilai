@@ -8,6 +8,8 @@ AdminLTE Template
 Axios (untuk konsumsi API)
 CodeIgniter (REST API backend)
 📦 Instalasi & Setup
+
+BE : https://github.com/Arfilal/backend_sinilai.git
 1. Clone Repository
 git clone https://github.com/AuliaFitriNurAzizah/SI-Nilai.git
 cd sinilaiFrontend
