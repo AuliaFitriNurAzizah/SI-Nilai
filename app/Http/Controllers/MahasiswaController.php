@@ -28,11 +28,23 @@ class MahasiswaController extends Controller
         return redirect('mahasiswa');
     }
 
-    public function edit($npm)
+//     public function edit($npm)
+// {
+//     $response = Http::get($this->apiUrl . '/' . $npm);
+//   $mhs = json_decode($response->body(), true);
+//     return view('mahasiswa.edit_mahasiswa', compact('mhs'));
+// }
+
+public function edit($npm)
 {
     $response = Http::get($this->apiUrl . '/' . $npm);
-  $mahasiswa = json_decode($response->body(), true);
-    return view('mahasiswa.edit_mahasiswa', compact('mahasiswa'));
+    $mhs = json_decode($response->body(), true); // as array
+
+    if (!$mhs) {
+        abort(404, "Mahasiswa dengan npm $npm tidak ditemukan.");
+    }
+
+    return view('mahasiswa.edit_mahasiswa', ['mahasiswa' => $mhs]);
 }
 
     

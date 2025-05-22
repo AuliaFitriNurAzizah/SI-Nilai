@@ -15,7 +15,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/data_mahasiswa">Mahasiswa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/kelas">Kelas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/data_kelas">Kelas</a></li>
                     <li class="nav-item"><a class="nav-link" href="/prodi">Prodi</a></li>
                 </ul>
             </div>
@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="col-md-3">
-                <a href="/kelas" class="text-decoration-none">
+                <a href="/data_kelas" class="text-decoration-none">
                     <div class="card text-center shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Kelas</h5>

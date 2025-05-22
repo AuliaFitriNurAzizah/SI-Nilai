@@ -45,7 +45,7 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <a href="/data_mahasiswa">Data Mahasiswa</a>
-        <a href="/tambah_mahasiswa">Tambah Mahasiswa</a>
+        <a href="/data_kelas">Data Kelas</a>
         <!-- Tambah link lain sesuai kebutuhan -->
     </div>
 
