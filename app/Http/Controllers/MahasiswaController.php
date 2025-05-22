@@ -29,11 +29,13 @@ class MahasiswaController extends Controller
     }
 
     public function edit($npm)
-    {
-        $response = Http::get($this->apiUrl . '/' . $npm);
-        $mhs = json_decode($response->body(), true);
-        return view('edit_mahasiswa', compact('mhs'));
-    }
+{
+    $response = Http::get($this->apiUrl . '/' . $npm);
+  $mahasiswa = json_decode($response->body(), true);
+    return view('mahasiswa.edit_mahasiswa', compact('mahasiswa'));
+}
+
+    
 
     public function update(Request $request, $npm)
     {
@@ -47,3 +49,4 @@ class MahasiswaController extends Controller
         return redirect('/data_mahasiswa');
     }
 }
+

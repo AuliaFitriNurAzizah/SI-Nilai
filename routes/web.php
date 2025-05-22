@@ -11,7 +11,7 @@ Route::get('/data_mahasiswa', [MahasiswaController::class, 'index'])->name('data
 Route::get('/tambah_mahasiswa', [MahasiswaController::class, 'create']);
 Route::post('/simpan_mahasiswa', [MahasiswaController::class, 'store']);
 Route::get('/edit_mahasiswa/{npm}', [MahasiswaController::class, 'edit']);
-// Route::post('/update_mahasiswa/{npm}', [MahasiswaController::class, 'update']);
+Route::post('/update_mahasiswa/{npm}', [MahasiswaController::class, 'update']);
 Route::get('/hapus_mahasiswa/{npm}', [MahasiswaController::class, 'destroy']);
 
 Route::resource('mahasiswa', MahasiswaController::class);
